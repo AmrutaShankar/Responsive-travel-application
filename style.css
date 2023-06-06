@@ -1,0 +1,381 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+}
+
+.header {
+   height: 100vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/travel-imgg.avif);
+   background-position: center;
+   background-size: cover;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 7%;
+}
+
+.logo {
+   width: 100px;
+   cursor: pointer;
+}
+
+.nav-links li {
+   list-style: none;
+   display: inline-block;
+   margin: 10px 30px;
+
+
+}
+
+.link {
+   text-decoration: none;
+   color: #fff;
+}
+
+.link:hover {
+   color: red;
+}
+
+.register-btn {
+   background: #fff;
+   color: #000;
+   text-decoration: none;
+   border-radius: 20px;
+   padding: 10px 20px;
+   font-size: 14px;
+}
+
+.container {
+   padding: 0 7%;
+}
+
+.header h1 {
+   text-align: center;
+   font-size: 4vw;
+   font-weight: 500;
+   color: #fff;
+   padding-top: 15%;
+}
+
+.search-bar {
+   background: #fff;
+   width: 70%;
+   margin: 30px auto;
+   padding: 6px 10px 6px 10px;
+   border-radius: 50px;
+}
+
+.search-bar form {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.search-bar form input {
+   display: block;
+   border: 0;
+   outline: none;
+   background: transparent;
+}
+
+.search-bar form button {
+   background: #ff5361;
+   width: 55px;
+   height: 55px;
+   border-radius: 50%;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+}
+
+.search-bar form button img {
+   width: 15px;
+   margin-top: 7px;
+}
+
+.location-input {
+   flex: 1;
+}
+
+.search-bar form label {
+   font-weight: 700;
+}
+
+
+
+/* -----------------Exclusives Css ---------------- */
+.sub-title {
+   margin: 50px 0 20px;
+   font-size: 2.2vw;
+   font-weight: 500;
+   color: #333;
+}
+
+.exclusives {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 30px;
+}
+
+.exclusives div img {
+   width: 100%;
+   border-radius: 20px;
+}
+
+.exclusives div {
+   position: relative;
+}
+
+.exclusives div span {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   bottom: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: #fff;
+
+}
+
+
+/*---------------- Trending Places ---------------*/
+.trending {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 30px;
+   margin-bottom: 30px;
+}
+
+.trending div img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+.trending h3 {
+   font-weight: 700;
+   margin-top: 10px;
+}
+
+
+/* ----------Call To Action---------- */
+.cta {
+   margin: 80px 0;
+   background-image: linear-gradient(to right, #3f2321, transparent), url(images/banner-2.png);
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   padding: 5%;
+   color: #fff;
+}
+
+.cta h3 {
+   font-size: 3vw;
+   line-height: 4vw;
+   font-weight: 500;
+}
+
+.cta p {
+   font-size: 18px;
+   margin: 10px 0;
+}
+
+.cta-btn {
+   background: #ff5361;
+   color: #fff;
+   text-decoration: none;
+   padding: 12px 30px;
+   border-radius: 8px;
+   margin-top: 20px;
+   display: inline-block;
+}
+
+/* <!------------------------ Traveller Stories ---------------------> */
+
+.stories {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-gap: 30px;
+   margin-bottom: 30px;
+}
+
+.stories div img {
+   width: 100%;
+   border-radius: 10px;
+
+}
+
+.stories div {
+   position: relative;
+   text-align: center;
+
+}
+
+.stories p {
+   position: absolute;
+   width: 80%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #fff;
+   font-size: 26px;
+}
+
+.start-btn {
+   text-decoration: none;
+   background: #ff5361;
+   width: 80%;
+   color: #fff;
+   max-width: 350px;
+   display: block;
+   text-align: center;
+   margin: 60px auto;
+   padding: 15px;
+   border-radius: 30px;
+   font-size: 20px;
+}
+
+/* ----------------------- About msg -----------------------*/
+.about-msg {
+   text-align: center;
+   margin: 80px 0;
+   color: #333;
+   font-size: 17px;
+}
+
+.about-msg h2 {
+   font-size: 28px;
+   margin-bottom: 38px;
+   font-weight: 600;
+
+}
+
+
+/*-------------------------- footer  ------------------------*/
+.footer {
+   margin: 80px 0 10px;
+   text-align: center;
+}
+
+.footer a {
+   text-decoration: none;
+   color: #999;
+   font-size: 22px;
+   margin: 0 10px;
+}
+
+.footer hr {
+   background: #999;
+   height: 1px;
+   width: 100%;
+   border: 0;
+   margin: 20px 0;
+}
+
+.footer p {
+   padding-bottom: 15px;
+}
+
+
+nav .fa-bars {
+   display: none;
+}
+
+/*-------------------- For Smaller Screen Devices --------------------*/
+@media only screen and (max-width: 700px) {
+   .logo {
+      position: fixed;
+      top: 4%;
+      left: 7%;
+   }
+
+   nav {
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      display: inline-block;
+      width: 100%;
+      padding: 100px 7% 0;
+      background: #000;
+      text-align: right;
+      max-height: 100px;
+      overflow: hidden;
+      transition: max-height 0.5s;
+   }
+
+   nav .nav-links li {
+      margin: 10px 0;
+      display: block;
+   }
+   .register-btn {
+      margin: 15px 0 30px;
+      display: inline;
+
+   }
+
+   nav .fa-bars {
+      display: block;
+      position: fixed;
+      top: 4%;
+      right: 7%;
+      font-size: 28px;
+      color: #fff;
+   }
+   .hidemenu{
+      max-height: 300px;
+   }
+   .header h1{
+      padding-top: 300px;
+      font-size: 7vw;
+   }
+   .search-bar {
+width: 90%;
+margin: 50px auto;
+padding: 30px 70px 30px;
+border-radius: 5px;
+position: relative;
+   }
+   .search-bar form{
+      display: block;
+   }
+
+   .search-bar form input {
+      border-bottom: 1px solid #ddd;
+      width: 80%;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      padding-bottom: 2px;
+      text-decoration: none
+   }
+   .search-bar form button {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50% , 50%);
+   }
+   .sub-title{
+      font-size: 28px;
+      font-weight: 500;
+   }
+   .cta {
+      padding: 15% 5%;
+   }
+   .cta h3{
+      font-size: 7vw;
+      line-height: 8vw;
+   }
+   .cta p{
+      font-size: 18px;
+   }
+   .cta-btn {
+      padding: 6px 15px;
+      border-radius: 4px;
+      margin-top: 14px;
+      font-size: 14px;
+   }
+}
